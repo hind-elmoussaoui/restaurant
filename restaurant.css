@@ -1,0 +1,338 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar {
+    background-color: #d4a01a; /* Color doré pour l'effet marocain */
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    color: white;
+    margin-right: auto;
+}
+.brand-center {
+    font-family: 'Georgia', serif;
+    font-size: 2rem; 
+    color: white; 
+    margin: auto; 
+    font-weight: bold; 
+    text-align: center; 
+}
+    
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navbar-nav .nav-item {
+    margin-left: 20px;
+}
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff8e1; /* Couleur dorée pour l'effet au survol */
+}
+.navbar a:hover {
+    color: TURQUOISE;
+}
+/* Hero Section */
+.hero-section {
+    background-image: url('dessigne.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Hauteur de l'écran */
+    display: flex;
+    align-items: center; /* Centrer verticalement le contenu */
+    justify-content: center; /* Centrer horizontalement le contenu */
+    color: white; /* Texte en blanc pour contraste */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Ajouter un effet d'ombre au texte */
+}
+.container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 7rem 1.5rem;
+}
+
+.col-md-6{
+    display: flex; /* Active Flexbox */
+    align-items: center; /* Centre verticalement si les hauteurs diffèrent */
+    gap: 20px; /* Ajoute de l'espace entre l'image et le texte */
+}
+.col-md-7{
+    font-size: 16px; /* Taille de la police */
+    color: #333; /* Couleur du texte */
+    line-height: 1.6; /* Hauteur des lignes pour un meilleur espacement */
+}
+.col-md-4 {
+    flex: 0 0 30%; 
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.hero-section .text-center h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+/* Appliquer une couleur personnalisée au titre */
+.text-custom-color {
+    color: #4CAF50;  /* Remplacez cette couleur par celle que vous préférez (par exemple #4CAF50 pour un vert) */
+}
+.hero-section .btn {
+    margin-top: 20px;
+    background-color: #d4a01a;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+.hero-section .btn:hover {
+    background-color: #b38b14;
+}
+*/
+/* Menu Cards */
+.card {
+    border: none;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.card-img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 200px; 
+}
+
+.card-img-top {
+    width: 100%;
+    height: 109%;
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+}
+
+.card-img-container:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.card-body {
+    padding: 20px;
+    background-color: white;
+    border-radius: 0 0 8px 8px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold
+}
+
+.card-text {
+    font-size: 0.95rem;
+}
+
+.card-text strong {
+    font-weight: bold;
+    color: #d4a01a;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+
+/* Section About Us */
+.container {
+    padding: 50px 20px;
+}
+.container.my-5 {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    flex-wrap: wrap;
+    flex-direction: column;
+    MARGIN: -18px 20px -43px 0;
+}
+/*
+.container.my-5 img {
+    flex: 0 0 45%;
+    max-width: 100%; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.container.my-5 .text-content {
+    flex: 0 0 50%;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+*/
+h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+    color: #d4a01a;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+img.img-fluid {
+    width: 300px; /* Ajuste la largeur de l'image */
+    height: 340PX; /* Maintient le ratio de l'image */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Form */
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: #333;
+}
+
+.form-control {
+    font-size: 1.1rem;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #d4a01a;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #b38b14;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+
+    .container {
+        padding: 30px 10px;
+    }
+}
+.social-icons i {
+    font-size: 2em;
+    color: #FA8072; /* Couleur salmon pour les icônes */
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+  /* Couleurs spécifiques pour les plats */
+  .card-title {
+    color: #333;
+  }
+  .social-icons i:hover {
+    color: #d4a01a; /* Couleur dorée au survol */
+}
+.hero-title {
+    color: TURQUOISE; /* Couleur saumon */
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-subtitle {
+    color: TURQUOISE ; /* Couleur saumon */
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+  #plat-tajin .card-title {
+    color: #d2691e; /* Couleur marron pour le Tajin */
+  }
+  
+  #plat-rffisa .card-title {
+    color: #b22222; /* Couleur rouge foncé pour la Rffisa */
+  }
+  
+  #plat-lham-bel-barkok .card-title {
+    color: #8b4513; /* Couleur terre de sienne pour L'ham bel Barkok */
+  }
+  
+  #plat-kouskous .card-title {
+    color: #daa520; /* Couleur dorée pour le Kouskous */
+  }
+  
+  #plat-bastila-poulet .card-title {
+    color: #8a2be2; /* Couleur pour la Bastila de Poulet */
+  }
+  
+  #plat-bastila-poisson .card-title {
+    color: #4682b4; /* Couleur bleue pour la Bastila de L'hout */
+  }
+  
+  #plat-bastila-amandes .card-title {
+    color: #cd5c5c; /* Couleur corail pour la Bastila de Loz */
+  }
+  
